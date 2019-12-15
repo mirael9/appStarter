@@ -119,6 +119,7 @@ p {
 .btn--green {
     background: linear-gradient(to right, #009fc5 0%, #3cecb0 100%);
     color: #fff;
+    position: relative;
     z-index: 0;
     transition: all .3s;
 }
