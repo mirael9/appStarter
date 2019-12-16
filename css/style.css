@@ -1358,6 +1358,11 @@ textarea :focus {
         width: 36px;
         margin: 0 auto;
     }
+
+    .hightlights__col-info {
+        padding: 25px;
+    }
+
 }
 
 @media (max-width: 479px) {
