@@ -298,6 +298,7 @@ textarea :focus {
 
 .heading__phone {
     margin: auto 0;
+    padding: 85px 0 0 0;
 }
 
 .heading__phone-img {
