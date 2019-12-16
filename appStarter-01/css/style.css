@@ -178,9 +178,9 @@ textarea :focus {
     clear: both;
 }
 
-/* .wrapper {
+.wrapper {
     overflow: hidden;
-} */
+}
 
 .container {
     max-width: 1200px;
@@ -219,6 +219,7 @@ textarea :focus {
     display: inline-block;
     margin-left: 25px;
 }
+
 
 .header__nav-list {
     /* letter-spacing: -.36em; */
@@ -264,6 +265,13 @@ textarea :focus {
     justify-content: space-between;
 }
 
+.heading__wrap:before {
+    /* content: '';
+    height: 30%;
+    vertical-align: middle;
+    display: inline-block; */
+}
+
 .heading__box {
     max-width: 530px;
     vertical-align: middle;
@@ -294,10 +302,6 @@ textarea :focus {
     display: inline-block;
     margin-right: 20px;
     letter-spacing: normal;
-}
-
-.heading__phone {
-    margin: auto 0;
 }
 
 .heading__phone-img {
@@ -331,6 +335,7 @@ textarea :focus {
 .about-us__row {
     letter-spacing: -.36em;
     margin: 0 -15px;
+
 }
 
 .about-us__col {
@@ -357,6 +362,13 @@ textarea :focus {
     position: relative;
     box-shadow: 0px 6px 12px 0px rgba(40, 43, 49, 0.08);
 }
+
+/* .about-us__img-wrap:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+} */
 
 .about-us__img-wrap--sync {
     background: linear-gradient(135deg, #755bec 0%, #35b1f7 100%);
@@ -434,6 +446,7 @@ textarea :focus {
 
 .partners__link:hover img {
     filter: grayscale(100%);
+
 }
 
 .partners__link img {
@@ -443,7 +456,7 @@ textarea :focus {
 }
 
 .info {
-    padding: 50px 0;
+    padding: 120px 0;
     background-color: #f8f9fa;
 }
 
@@ -457,6 +470,7 @@ textarea :focus {
     vertical-align: middle;
     width: 50%;
     padding-right: 30px;
+
 }
 
 .info__col-img {
@@ -474,11 +488,12 @@ textarea :focus {
 
 .info__list {
     max-width: 470px;
+    
 }
 
 .info__item {
     letter-spacing: -.36em;
-    padding: 15px 15px 15px;
+    padding: 24px 30px 30px;
     transition: all .3s;
     border-radius: 10px;
 }
@@ -518,20 +533,23 @@ textarea :focus {
     line-height: 1.78;
     color: #676c75;
 }
-
 .download__section {
     background-repeat: round;
     background-size: cover;
-}
 
+    /* background-size: 100%;; */
+}
 .download__section__inner {
+    max-width: 1200px;
     padding: 80px 15px;
+    margin: 0 auto;
 }
 
 .download__col {
     width: 50%;
     float: left;
 }
+
 
 .download__title {
     color: #fff;
@@ -561,17 +579,16 @@ textarea :focus {
     min-width: 170px;
 }
 
+
 .hightlights {
     padding: 120px 0;
     background-color: #f8f9fa;
 }
-
 .hightlights__shadow {
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 10px 10px 10px #eaebec;
 }
-
 .hightlights__wrap {
     display: table;
 }
@@ -579,7 +596,6 @@ textarea :focus {
 .hightlights__caption {
     font-weight: 300;
     font-size: 35px;
-    line-height: 35px;
 }
 
 .hightlights__text {
@@ -620,7 +636,7 @@ textarea :focus {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    padding: 115px;
+    padding: 40px;
 }
 
 .watchvideo {
@@ -629,28 +645,25 @@ textarea :focus {
 
 .watchvideo__title {
     color: #fff;
+    padding: 125px;
     font-size: 35px;
     font-weight: 300;
 }
-
 .watchvideo__title strong {
     font-weight: 800;
 }
 
 .watchvideo__text {
     max-width: 580px;
-    text-align: center;
+    margin: -100px auto 50px;
     color: #fff;
     font-size: 16px;
-    margin: 0 auto 60px;
 }
 
 .watchvideo__col-img {
     min-height: 520px;
     background-size: cover;
-    padding: 125px 0 160px 0;
 }
-
 .play-icon__wrapper {
     width: 90px;
     margin: 0 auto;
@@ -668,7 +681,6 @@ textarea :focus {
     text-align: center;
     line-height: 70px;
 }
-
 .play-icon-button__animation {
     margin: 0 auto;
     position: absolute;
@@ -682,7 +694,6 @@ textarea :focus {
     animation: playbutton 2s infinite;
     animation-delay: .5s;
 }
-
 .play-icon-button__animation:before {
     content: '';
     border: 2px solid rgba(255, 255, 255, .3);
@@ -721,7 +732,6 @@ textarea :focus {
         /* transform: scale(1.2) */
     }
 }
-
 .play-icon {
     vertical-align: middle;
     transform: scale(1);
@@ -781,13 +791,19 @@ textarea :focus {
 .customers__comments {
     background: #f8f9fa;
 }
-
+.customers {
+    background: #f8f9fa;
+}
 .customers__wrapper {
     display: flex;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 .comments {
-    padding: 117px 135px 117px 95px;
+    padding: 117px 0 117px 95px;
 }
 
 .comments__avatar {
@@ -833,23 +849,23 @@ textarea :focus {
     margin: 0 0 20px;
 }
 
-.comments__item:nth-child(even) {
+.comments__item:nth-child(2) {
     margin: 0 0 20px 100px;   
 }
 
-.comments__item:nth-child(even) .comments__avatar {
+.comments__item:nth-child(2) .comments__avatar {
     float: right;
 }
 
-.comments__item:nth-child(even) .comments__avatar img {
+.comments__item:nth-child(2) .comments__avatar img {
     margin: 0 0 10px 30px;
 }
 
-.comments__item:nth-child(even) .comment {
+.comments__item:nth-child(2) .comment {
     text-align: right;
 }
 
-.comments__item:nth-child(even).comment__footer {
+.comments__item:nth-child(2) .comment__footer {
     flex-direction: row-reverse;
 }
 
@@ -858,12 +874,10 @@ textarea :focus {
     font-size: 15px;
     margin: 0 0 36px;
 }
-
 .links li a {
     font-size: 15px;
     font-weight: 800;
 }
-
 .links li:before {
     content: '';
     width: 26px;
@@ -878,6 +892,8 @@ textarea :focus {
 }
 
 .choose-plan__inner {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     padding: 120px 0;
 }
@@ -891,7 +907,6 @@ textarea :focus {
     font-size: 35px;
     font-weight: 300;
 }
-
 .left__container .title strong {
     font-weight: 800;
 }
@@ -977,15 +992,12 @@ textarea :focus {
 .professional .plan__price {
     color: #fff;
 }
-
 .professional .options li {
     color: #fff;
 }
-
 .professional .options li:before {
     background-image: url(../img/success-icon1.png);
 }
-
 .plans__item .btn {
     max-width: 250px;
     margin: 30px auto 10px;
@@ -1023,7 +1035,8 @@ textarea :focus {
     margin: 0 auto 50px;
     color: #fff;
     font-size: 16px;
-    font-weight: 300; 
+    font-weight: 300;
+    
 }
 
 .callback__form {
@@ -1086,6 +1099,7 @@ textarea :focus {
     border: 1px solid #e7e8ea;
     border-radius: 4px;
     line-height: 0;
+
 }
 
 .footer__social-item {
@@ -1093,6 +1107,7 @@ textarea :focus {
     display: inline-block;
     width: 33.33%;
     border-right: 1px solid #e7e8ea;
+
 }
 
 .footer__social-item:last-child {
@@ -1153,19 +1168,6 @@ textarea :focus {
 
     .about-us__inner {
         padding: 40px 20px;
-    }
-
-    .plans__wrapper {
-        padding: 0 0 0 0;
-    }
-
-    .left__container .title {
-        font-size: 30px;
-    }
-
-    .choose-plan__inner {
-        display: flex;
-        padding: 50px 0;
     }
 }
 
@@ -1266,58 +1268,42 @@ textarea :focus {
     .download__btns .btn {
         margin: 15px 10px;
     }
-
     .plans__wrapper {
         padding: 0 10px;
     }
-
     .plans__item.professional .btn {
         margin: 30px auto 10px;
     }
-
     .choose-plan__inner {
         padding: 20px 0;
     }
-
     .left__container {
         padding: 0 20px;
     }
-
     .customers__about {
         padding: 20px;
-        max-width: none;
     }
-
     .comments {
         padding: 20px;
     }
-
     .comments__item:nth-child(2) {
         margin: 0 0 20px;
     }
-    
-    .watchvideo__text { 
-        margin: 40px auto 60px;
-    }
-
+    .watchvideo__title { padding: 20px;}
+    .watchvideo__text { margin: 20px 20px 100px;}
     .watchvideo__col-img {
-        padding: 20px 20px 90px;
-        min-height: auto;
+        padding: 0 0 130px;
     }
-
     .plans__item {
         margin: 0;
         padding: 0 0 20px;
     }
-
     .hightlights__col-img {
         width: 100%;
     }
-
     .hightlights {
         padding: 20px 0;
     }
-
     .callback__col,
     .hightlights__col-img,
     .hightlights__wrap,
@@ -1326,33 +1312,27 @@ textarea :focus {
     .customers__wrapper {
         display: block;
     }
-
     .callback__col {
         width: 100%;
         margin-bottom: 10px;
     }
-
     .callback__form {
         padding: 20px;
     }
-
     .callback {
         padding: 20px 0;
         height: auto;
     }
-
     .footer__logo,
     .footer__copyright,
     .footer__social {
         display: block;
         width: 100%;
     }
-
     .footer__copyright,
     .footer__social {
         margin: 20px 0 0 0;
     }
-
     .footer__social-link {
         width: 36px;
         margin: 0 auto;
